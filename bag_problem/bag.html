@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背包问题</title>
+    <link rel="stylesheet" type="text/css" href="bag.css">
+</head>
+<body>
+    <div class="main">
+        <div class="bagset">
+            <div class="bagchoose">
+                <div class="choosebag_button" onclick="choose_01()">01背包</div>
+                <div class="choosebag_button"onclick="choose_duo()">多重背包</div>
+            </div>
+            <div class="detailset">
+                <div class="detailsetting">
+                    <span>背包容量：</span>
+                    <input type="text" class="detailsetting_input" id="capacity">
+                </div>
+                <div class="detailsetting">
+                    <span>物品个数：</span>
+                    <input type="text" class="detailsetting_input" id="num">
+                    <div id="create_table" onclick="alert_to_choose();">确认并生成表格填写信息</div>
+                </div>
+                <table id="detailsetting_table">
+                </table>
+                <div class="buttons">
+                    <span id="run_button" onclick="run();">运行</span>
+                    <span id="clear_button" onclick="clear_all();">清零</span>
+                </div>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="cartoon_div">
+                <div class="cartoon">
+                    <div id="article_div">
+                    </div>
+                    <div class="bag">
+                        <img src="image/bag.png" id="bag_pic">
+                    </div>
+                </div>
+            </div>  
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="bag.js"></script>
+</body>
+</html>

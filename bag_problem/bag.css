@@ -1,0 +1,113 @@
+.main{
+    width: fit-content;
+    margin: 0 auto;
+}
+.bagset{
+    display: flex;
+    flex-direction: row;
+}
+.bagchoose{
+    margin: 0 2rem;
+}
+.cartoon_div{
+  margin: 0 1rem;
+}
+.choosebag_button{
+    width: 5rem;
+    margin: 2rem auto;
+    border: 1px solid;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.detailset{
+    display: flex;
+    flex-direction: column;
+}
+.detailsetting{
+    margin: 0.5rem;
+}
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    width: fit-content;
+}
+td{
+    text-align: center;
+    width: 3rem;
+    border: 1px solid;
+}
+.weights,.values,.numbers{
+    border: 0;
+    padding: 0;
+    width: 3rem;
+    height: 1.5rem;
+}
+#create_table{
+    width: 12rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+    cursor: pointer;
+}
+#run_button,#clear_button{
+    margin: 0.5rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+#article_div{
+    margin: 2rem 0 2rem 0;
+}
+.article,.article_put{
+    display: inline-block;
+    background-color: #b9b9b9;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0.2rem;
+}
+.article_put,.article_and_num{
+    position: relative;
+    animation: putin 4s infinite;
+}
+.article_and_num{
+    margin: 0.5rem;
+}
+#bag_pic{
+    width: 7rem;
+}
+.bag{
+    border: 1px solid;
+    height: 10rem;
+}
+.cartoon{
+    width: fit-content;
+    max-width: 45%;
+    min-width: 10rem;
+}
+.showcase{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#result{
+    width: 20rem;
+    margin: 2rem 0;
+}
+@keyframes putin{
+    0%{
+        top:0;
+    }
+    100%{
+        top:9rem;
+    }
+}
